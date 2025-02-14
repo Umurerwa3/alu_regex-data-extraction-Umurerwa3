@@ -25,3 +25,10 @@ const hashtagRegex = /#\w+/g;
 const currencyRegex = /\b(?:\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?|\d+(?:\.\d{2})?)\b/g;
 
 
+n extractPhoneNumbers(text) {
+    return text.match(phoneRegex) || [];
+}
+
+// Function to extract URLs from the given text
+function extractUrls(text) {
+    return text.match(urlRegex) || [];
