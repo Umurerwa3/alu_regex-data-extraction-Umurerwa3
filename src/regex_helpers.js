@@ -24,14 +24,24 @@ const hashtagRegex = /#\w+/g;
 // Regex for Currency Amounts
 const currencyRegex = /\b(?:\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?|\d+(?:\.\d{2})?)\b/g;
 
+// Function to extract email addresses from the given text
+function extractEmails(text) {
+    return text.match(emailRegex) || [];
+}
 
-n extractPhoneNumbers(text) {
+// Function to extract phone numbers from the given text
+function extractPhoneNumbers(text) {
     return text.match(phoneRegex) || [];
 }
 
 // Function to extract URLs from the given text
 function extractUrls(text) {
     return text.match(urlRegex) || [];
+}
+
+// Function to extract credit card numbers from the given text
+function extractCreditCardNumbers(text) {
+    return text.match(creditCardRegex) || [];
 }
 
 // Function to extract times (in both 24-hour and 12-hour format) from the given text
@@ -44,4 +54,24 @@ function extractHtmlTags(text) {
     return text.match(htmlTagsRegex) || [];
 }
 
+// Function to extract hashtags from the given text
+function extractHashtags(text) {
+    return text.match(hashtagRegex) || [];
+}
 
+// Function to extract currency amounts from the given text
+function extractCurrency(text) {
+    return text.match(currencyRegex) || [];
+}
+
+// Export all the functions so they can be used in index.js
+module.exports = {
+    extractEmails,
+    extractPhoneNumbers,
+    extractUrls,
+    extractCreditCardNumbers,
+    extractTime,
+    extractHtmlTags,
+    extractHashtags,
+    extractCurrency
+};
