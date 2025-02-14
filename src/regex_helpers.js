@@ -32,3 +32,16 @@ n extractPhoneNumbers(text) {
 // Function to extract URLs from the given text
 function extractUrls(text) {
     return text.match(urlRegex) || [];
+}
+
+// Function to extract times (in both 24-hour and 12-hour format) from the given text
+function extractTime(text) {
+    return text.match(timeRegex) || [];
+}
+
+// Function to extract HTML tags from the given text
+function extractHtmlTags(text) {
+    return text.match(htmlTagsRegex) || [];
+}
+
+
