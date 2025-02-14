@@ -21,3 +21,7 @@ const htmlTagsRegex = /<[^>]+>/g;
 // Regex for Hashtags
 const hashtagRegex = /#\w+/g;
 
+// Regex for Currency Amounts
+const currencyRegex = /\b(?:\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?|\d+(?:\.\d{2})?)\b/g;
+
+
