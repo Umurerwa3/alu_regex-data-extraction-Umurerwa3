@@ -1,0 +1,13 @@
+{
+    "name": "alu_regex-data-extraction-Umurerwa3",
+    "version": "1.0.0",
+    "description": "A project for extracting data using regular expressions to match emails, URLs, phone numbers, credit cards, and more.",
+    "main": "src/index.js",
+    "scripts": {
+      "start": "node src/index.js"
+    },
+    "author": "Olive Umurerwa",
+    "faculty": "Software engineering",
+    "my student email": "o.umurerwa@alustudent.com"
+   
+  }
