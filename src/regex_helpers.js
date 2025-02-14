@@ -22,7 +22,7 @@ const htmlTagsRegex = /<[^>]+>/g;
 const hashtagRegex = /#\w+/g;
 
 // Regex for Currency Amounts
-const currencyRegex = /\b(?:\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?|\d+(?:\.\d{2})?)\b/g;
+const currencyRegex = /\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?/g;
 
 // Function to extract email addresses from the given text
 function extractEmails(text) {
